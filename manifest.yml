@@ -1,0 +1,10 @@
+repositories:
+  - name: antora-ui-variscite
+    url: git@github.com:nsdrude-varigit/antora-ui-variscite.git
+    path: src/antora-ui-variscite
+  - name: antora-var-dev-center_home
+    url: git@github.com:nsdrude-varigit/antora-var-dev-center_home.git
+    path: src/antora-var-dev-center_home
+  - name: antora-var-dev-center_imx8mm-var-dart
+    url: git@github.com:nsdrude-varigit/antora-var-dev-center_imx8mm-var-dart.git
+    path: src/antora-var-dev-center_imx8mm-var-dart

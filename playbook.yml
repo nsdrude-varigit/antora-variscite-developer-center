@@ -1,15 +1,16 @@
 site:
   title: Variscite Developer Center 
   # the 404 page and sitemap files only get generated when the url property is set
-  url: /home/nate/git/wiki-antora/build/site/index.html
-  start_page: var-dev-center::index.adoc
+  url: https://nsdrude-varigit.github.io/antora-variscite-developer-center/
+  start_page: main::index.adoc
+
 content:
   sources:
-  - url: ../antora/var-dev-center/
+  - url: src/antora-var-dev-center_home/
     branches: HEAD
     edit_url: false
-  - url: ../antora/imx8mm-var-dart/
-    branches: [mx8mm-yocto-scarthgap-6.6.23_2.0.0-v1.1]
+  - url: src/antora-var-dev-center_imx8mm-var-dart/
+    branches: [mx8mm-yocto-scarthgap-6.6.23_2.0.0-v1.0, mx8mm-yocto-scarthgap-6.6.23_2.0.0-v1.1]
     # setting edit_url to false disables the Edit this Page link for any page that originates from this repository
     # the same thing can be achieved by adding empty credentials (i.e., @) in front of the domain in the URL
     edit_url: false
@@ -26,5 +27,5 @@ asciidoc:
     page-pagination: ''
 ui:
   bundle:
-    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    url: src/antora-ui-variscite/build/ui-bundle.zip
     snapshot: true
