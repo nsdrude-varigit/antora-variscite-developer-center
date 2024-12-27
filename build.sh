@@ -1,5 +1,16 @@
 #!/usr/bin/env bash
 
+if [ -z "$IN_NIX_SHELL" ]; then
+    # Check if nix-shell is available and use shell.nix if it exists
+    if command -v nix-shell >/dev/null 2>&1 && [ -f shell.nix ]; then
+        echo "Using nix-shell with shell.nix to run this script..."
+        nix-shell shell.nix --run "$0 $@"
+        exit $?
+    elif ! command -v nix-shell >/dev/null 2>&1; then
+        echo "nix-shell not available. Continuing without it..."
+    fi
+fi
+
 # Make the script variables readonly for safety
 readonly FILE_SCRIPT="$(basename "$0")"
 readonly DIR_SCRIPT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
