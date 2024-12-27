@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<sitemap>
+<loc>https://nsdrude-varigit.github.io/antora-variscite-developer-center/sitemap-component-a.xml</loc>
+</sitemap>
+<sitemap>
+<loc>https://nsdrude-varigit.github.io/antora-variscite-developer-center/sitemap-component-b.xml</loc>
+</sitemap>
+<sitemap>
+<loc>https://nsdrude-varigit.github.io/antora-variscite-developer-center/sitemap-imx8mm-var-dart.xml</loc>
+</sitemap>
+<sitemap>
+<loc>https://nsdrude-varigit.github.io/antora-variscite-developer-center/sitemap-main.xml</loc>
+</sitemap>
+</sitemapindex>

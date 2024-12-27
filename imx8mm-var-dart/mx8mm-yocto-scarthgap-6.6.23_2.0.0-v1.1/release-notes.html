@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Release Notes :: Variscite Developer Center</title>
+    <link rel="canonical" href="https://nsdrude-varigit.github.io/antora-variscite-developer-center/imx8mm-var-dart/mx8mm-yocto-scarthgap-6.6.23_2.0.0-v1.1/release-notes.html">
+    <link rel="next" href="recovery-sd-card.html">
+    <meta name="generator" content="Antora 3.1.10">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://nsdrude-varigit.github.io/antora-variscite-developer-center">Variscite Developer Center</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Support</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://www.variscite.com/support/" target="_blank">Support Center</a>
+            <a class="navbar-item" href="https://python.variscite.com/index.html" target="_blank">Python API</a>
+            <a class="navbar-item" href="https://variscite.com/training" target="_blank">Webinars</a>
+          </div>
+        </div>
+        <a class="navbar-item" href="https://variscite.com/" target="_blank">Variscite Website</a>
+        <a class="navbar-item" href="https://www.variscite.com/system-on-module-blog/" target="_blank">Blog</a>
+        <a class="navbar-item" href="https://variscite.com/training" target="_blank">Webinars</a>
+        <a class="navbar-item" href="https://www.variscite.com/contact-us/" target="_blank">Contact Sales</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="imx8mm-var-dart" data-version="mx8mm-yocto-scarthgap-6.6.23_2.0.0-v1.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="release-notes.html">DART-MX8M-MINI</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="release-notes.html">Release Notes</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">General Guides</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="recovery-sd-card.html">Using the recovery SD card</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Programming</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Hello World 'C' Application</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Building a Qt Hello World</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Debugging with Code::Blocks</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Debugging with Eclipse</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Debugging with Visual Studio Code</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">TFTP &amp; NFS</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Build Guides</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Setting a Development Environment</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Build Yocto from source code</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Yocto common build errors</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Customizing U-Boot</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Customizing the Linux kernel</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Toolchain installation for out of Yocto builds</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Build U-Boot from source code</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Build the Linux kernel from source code</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Installing Yocto binaries to eMMC via SD card</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Installing Yocto binaries to eMMC via Ethernet</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">U-Boot features</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Adding packages to Yocto</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Replace the Linux logo</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">OP-TEE</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Secure Boot / High Assurance Boot (HAB)</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">SWUpdate Guide</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Booting from USB using UUU (Universal Update Utility)</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Docker Guide</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">How-to Guides</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">802.15.4 OpenThread</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Audio</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="backlight.html">Backlight</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Bluetooth</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Bluetooth A2DP</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Bluetooth file transfer</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Bluetooth Low Energy</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">OV5640 Camera</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">CAN bus</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">CPU freq. and number of cores</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">CPU Temperature</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Display</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Ethernet</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">GPIO</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">I2C</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">RTC</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">SOM rev. 1.0</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">SPI</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Static IP address</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Suspend</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">UART</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">USB HT</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">USB OTG</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">User Button</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Video streaming - Playback/Capture</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Watchdog</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">WiFi</span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">DART-MX8M-MINI</span>
+    <span class="version">mx8mm-yocto-scarthgap-6.6.23_2.0.0-v1.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <div class="title"><a href="../../component-a/1.5.6/inline-text-formatting.html">Component A</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../component-a/1.5.6/inline-text-formatting.html">1.5.6</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../component-b/2.0/index.html">Component B</a></div>
+      <ul class="versions">
+        <li class="version">
+          <a href="../../component-b/2.5/index.html">2.5-beta.1</a>
+        </li>
+        <li class="version is-latest">
+          <a href="../../component-b/2.0/index.html">2.0</a>
+        </li>
+        <li class="version">
+          <a href="../../component-b/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <div class="title"><a href="release-notes.html">DART-MX8M-MINI</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="release-notes.html">mx8mm-yocto-scarthgap-6.6.23_2.0.0-v1.1</a>
+        </li>
+        <li class="version">
+          <a href="../mx8mm-yocto-scarthgap-6.6.23_2.0.0-v1.0/release-notes.html">mx8mm-yocto-scarthgap-6.6.23_2.0.0-v1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <div class="title"><a href="../../main/1/index.html">Variscite Development Center</a></div>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../main/1/index.html">1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../main/1/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="release-notes.html">DART-MX8M-MINI</a></li>
+    <li><a href="release-notes.html">Release Notes</a></li>
+  </ul>
+</nav>
+<div class="page-versions">
+  <button class="version-menu-toggle" title="Show other versions of page">mx8mm-yocto-scarthgap-6.6.23_2.0.0-v1.1</button>
+  <div class="version-menu">
+    <a class="version is-current" href="release-notes.html">mx8mm-yocto-scarthgap-6.6.23_2.0.0-v1.1</a>
+    <a class="version" href="../mx8mm-yocto-scarthgap-6.6.23_2.0.0-v1.0/release-notes.html">mx8mm-yocto-scarthgap-6.6.23_2.0.0-v1.0</a>
+  </div>
+</div>
+<div class="edit-this-page"><a href="file:///home/nate/git/antora/wiki-antora/src/antora-var-dev-center_imx8mm-var-dart//modules/ROOT/pages/release-notes.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Release Notes</h1>
+<div class="sect1">
+<h2 id="release-information"><a class="anchor" href="#release-information"></a>Release Information</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Yocto Scarthgap mx8mm-yocto-scarthgap-6.6.23_2.0.0-v1.1</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>OS Version</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yocto Scarthgap 5.0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Upstream BSP</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NXP L6.6.23_2.0.0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kernel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Linux 6.6.23</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Release tag</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/varigit/variscite-bsp-platform/tree/mx8mm-yocto-scarthgap-6.6.23_2.0.0-v1.1" target="_blank" rel="noopener">mx8mm-yocto-scarthgap-6.6.23_2.0.0-v1.1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Release manifest</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/varigit/variscite-bsp-platform/blob/mx8mm-yocto-scarthgap-6.6.23_2.0.0-v1.1/imx-6.6.23-2.0.0.xml}" target="_blank" rel="noopener">imx-6.6.23-2.0.0.xml</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Date</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12/02/2024</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Supported platforms</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DART-MX8M-MINI / VAR-SOM-MX8M-MINI</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>SOM revision</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">v1.1 and higher</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Recovery SD card link</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://variscite-public.nyc3.cdn.digitaloceanspaces.com/DART-MX8M-MINI/Software/mx8mm__yocto-scarthgap-6.6.23_2.0.0-v1.1__android-14.0.0_1.0.0-v1.1.wic.zst" target="_blank" rel="noopener">mx8mm__yocto-scarthgap-6.6.23_2.0.0-v1.1__android-14.0.0_1.0.0-v1.1.wic.zst</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Recovery SD card SHA256</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">356545b9afc584a39ee1132ae1cf9e196902ad5c33f69e52a43d3256e13b92a7</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Cortex M4 support</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://variwiki.com/index.php?title=MCUXpresso&release=MCUXPRESSO_2.15.0_V1.0_DART-MX8M-MINI" target="_blank" rel="noopener">MCUXPRESSO_2.15.0_V1.0_DART-MX8M-MINI</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="repository-details"><a class="anchor" href="#repository-details"></a>Repository Details</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Repository</th>
+<th class="tableblock halign-left valign-top">Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/varigit/uboot-imx/tree/lf_v2024.04_6.6.23-2.0.0_var01" target="_blank" rel="noopener">uboot-imx</a></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Branch: <a href="https://github.com/varigit/uboot-imx/tree/lf_v2024.04_6.6.23-2.0.0_var01" target="_blank" rel="noopener">lf_v2024.04_6.6.23-2.0.0_var01</a></p>
+</li>
+<li>
+<p>Commit: <a href="https://github.com/varigit/uboot-imx/commit/306ee82f6f8dade6b1cb23dfe2ef2c1b3315ca64" target="_blank" rel="noopener">306ee82f6f8dade6b1cb23dfe2ef2c1b3315ca64</a></p>
+</li>
+<li>
+<p>Changes: <a href="https://github.com/varigit/uboot-imx/compare/f631314f93cb6a8491a0b1515a1f2a22669d551f%2E%2E%2E306ee82f6f8dade6b1cb23dfe2ef2c1b3315ca64" target="_blank" rel="noopener">Patches</a></p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/varigit/linux-imx/tree/lf-6.6.y_6.6.23-2.0.0_var01" target="_blank" rel="noopener">linux-imx</a></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Branch: <a href="https://github.com/varigit/linux-imx/tree/lf-6.6.y_6.6.23-2.0.0_var01" target="_blank" rel="noopener">lf-6.6.y_6.6.23-2.0.0_var01</a></p>
+</li>
+<li>
+<p>Commit: <a href="https://github.com/varigit/linux-imx/commit/98ccdc8d76acc094544a70a94494968c3d0ab678" target="_blank" rel="noopener">98ccdc8d76acc094544a70a94494968c3d0ab678</a></p>
+</li>
+<li>
+<p>Changes: <a href="https://github.com/varigit/linux-imx/compare/6cb72986bc16566363cf5b48415e7e38f6cc3521%2E%2E%2E98ccdc8d76acc094544a70a94494968c3d0ab678" target="_blank" rel="noopener">Patches</a></p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/varigit/meta-variscite-bsp-imx/tree/scarthgap_6.6.23-2.0.0_var01" target="_blank" rel="noopener">meta-variscite-bsp-imx</a></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Branch: <a href="https://github.com/varigit/meta-variscite-bsp-imx/tree/scarthgap_6.6.23-2.0.0_var01" target="_blank" rel="noopener">scarthgap_6.6.23-2.0.0_var01</a></p>
+</li>
+<li>
+<p>Commit: <a href="https://github.com/varigit/meta-variscite-bsp-imx/commit/6be87eb1b0590c83c6f1919bad770169338c31c9" target="_blank" rel="noopener">6be87eb1b0590c83c6f1919bad770169338c31c9</a></p>
+</li>
+<li>
+<p>Changes: <a href="https://github.com/varigit/meta-variscite-bsp-imx/compare/dddbc1f1ea0f25b7d9b113ab6097fe695968856a%2E%2E%2E6be87eb1b0590c83c6f1919bad770169338c31c9" target="_blank" rel="noopener">Patches</a></p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/varigit/meta-variscite-bsp-common/tree/scarthgap_6.6.23-2.0.0_var01" target="_blank" rel="noopener">meta-variscite-bsp-common</a></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Branch: <a href="https://github.com/varigit/meta-variscite-bsp-common/tree/scarthgap_6.6.23-2.0.0_var01" target="_blank" rel="noopener">scarthgap_6.6.23-2.0.0_var01</a></p>
+</li>
+<li>
+<p>Commit: <a href="https://github.com/varigit/meta-variscite-bsp-common/commit/c59b100b2e4ac90174bdf641621ac66194d644a8" target="_blank" rel="noopener">c59b100b2e4ac90174bdf641621ac66194d644a8</a></p>
+</li>
+<li>
+<p>Changes: <a href="https://github.com/varigit/meta-variscite-bsp-common/compare/ee1f0311a6383c7f4e874376d2d46edefe6f5c6a%2E%2E%2Ec59b100b2e4ac90174bdf641621ac66194d644a8" target="_blank" rel="noopener">Patches</a></p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/varigit/meta-variscite-sdk-imx/tree/scarthgap_6.6.23-2.0.0_var01" target="_blank" rel="noopener">meta-variscite-sdk-imx</a></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Branch: <a href="https://github.com/varigit/meta-variscite-sdk-imx/tree/scarthgap_6.6.23-2.0.0_var01" target="_blank" rel="noopener">scarthgap_6.6.23-2.0.0_var01</a></p>
+</li>
+<li>
+<p>Commit: <a href="https://github.com/varigit/meta-variscite-sdk-imx/commit/880f0597e21b301a93c6c22dbedab204ba6332f7" target="_blank" rel="noopener">880f0597e21b301a93c6c22dbedab204ba6332f7</a></p>
+</li>
+<li>
+<p>Changes: <a href="https://github.com/varigit/meta-variscite-sdk-imx/compare/185534d54966010c481fa753e94c52c8e76d6fd0%2E%2E%2E880f0597e21b301a93c6c22dbedab204ba6332f7" target="_blank" rel="noopener">Patches</a></p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/varigit/meta-variscite-sdk-common/tree/scarthgap_6.6.23-2.0.0_var01" target="_blank" rel="noopener">meta-variscite-sdk-common</a></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Branch: <a href="https://github.com/varigit/meta-variscite-sdk-common/tree/scarthgap_6.6.23-2.0.0_var01" target="_blank" rel="noopener">scarthgap_6.6.23-2.0.0_var01</a></p>
+</li>
+<li>
+<p>Commit: <a href="https://github.com/varigit/meta-variscite-sdk-common/commit/507269b8cb28367c04e2939bb5c8648c8cf8877b" target="_blank" rel="noopener">507269b8cb28367c04e2939bb5c8648c8cf8877b</a></p>
+</li>
+<li>
+<p>Changes: N/A</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="change-log"><a class="anchor" href="#change-log"></a>Change Log</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Bugfix: Access point not working on Laird LWB5 chipset.<br>
+Fixed by <a href="https://github.com/varigit/linux-imx/commit/98ccdc8d76acc094544a70a94494968c3d0ab678" target="_blank" rel="noopener">linux-imx@98ccdc8</a></p>
+</li>
+<li>
+<p>See repository changes above for all details</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="known-issues"><a class="anchor" href="#known-issues"></a>Known Issues</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><code>meta-qt6</code> and <code>meta-browser</code> both provide <code>gn-native</code>, breaking the SDK generation for <code>fsl-image-qt6</code>.<br></p>
+<div class="paragraph">
+<p>To fix it, add the following line to local.conf:<br></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">BBMASK += "/meta-browser/meta-chromium/recipes-browser/chromium/gn-native_.*\.bb"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Note: <code>fsl-image-chromium</code> will no longer build.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="next"><a href="recovery-sd-card.html">Using the recovery SD card</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
