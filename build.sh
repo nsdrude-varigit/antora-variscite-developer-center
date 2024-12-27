@@ -21,11 +21,26 @@ readonly ANTORA_UI_BUNDLE_ARCHIVE="$ANTORA_UI_BUNDLE/build/ui-bundle.zip"
 
 # Check for --deploy argument
 DEPLOY_TO_GITHUB=false
-for arg in "$@"; do
-    if [ "$arg" == "--deploy" ]; then
-        DEPLOY=true
-        break
-    fi
+# Process arguments
+while (( "$#" )); do
+    case "$1" in
+        --deploy)
+            DEPLOY_TO_GITHUB=true
+            shift
+            ;;
+        --help|-h)
+            echo "Usage: $0 [OPTIONS]"
+            echo "Options:"
+            echo "  --deploy   Deploy to GitHub"
+            echo "  --help, -h Show this help message"
+            exit 0
+            ;;
+        *)
+            echo "Error: Unknown option '$1'"
+            echo "Use --help to display usage information."
+            exit 1
+            ;;
+    esac
 done
 
 # Fetch the repos if they don't exist already
@@ -42,9 +57,8 @@ fi
 
 # Return to the original script directory
 cd "$DIR_SCRIPT"
-
 # Run Antora to build the site
-if [ "DEPLOY" != "true" ]; then
+if [ "$DEPLOY_TO_GITHUB" != "true" ]; then
     # Build it for localhost
     URL="${DIR_SCRIPT}/build/site/index.html" npx antora playbook.yml
 else
@@ -52,7 +66,7 @@ else
     npx antora playbook.yml
 fi
 
-if [ "$DEPLOY" == "true" ]; then
+if [ "$DEPLOY_TO_GITHUB" == "true" ]; then
     # Push the output to GitHub
     OUTPUT_DIR=${DIR_SCRIPT}/build/site/
     BRANCH="www"
