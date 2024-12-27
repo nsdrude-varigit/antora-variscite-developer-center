@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/usr/bin/env bash
 
 # Make the script variables readonly for safety
 readonly FILE_SCRIPT="$(basename "$0")"
